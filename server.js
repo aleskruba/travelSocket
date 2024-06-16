@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin:[ "http://localhost:3000","https://travel-cc3l.onrender.com"],
         methods: ['GET', 'POST', 'PUT', 'DELETE']
     }
 });
